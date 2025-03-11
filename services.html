@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional handyman services in Jacksonville, FL. Residential and commercial property maintenance, furniture assembly, aging in place modifications, and more.">
+    <title>Our Services | Crystal Handyman Pros | Jacksonville, FL</title>
+    <style>
+        :root {
+            --primary-color: #f4bf46; /* The yellow color you wanted to keep */
+            --secondary-color: #333333;
+            --accent-color: #2b5797;
+            --light-gray: #f5f5f5;
+            --medium-gray: #e0e0e0;
+            --text-color: #333333;
+            --white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+        }
+        
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+        
+        .logo span {
+            color: var(--primary-color);
+        }
+        
+        .tagline {
+            font-style: italic;
+            color: var(--accent-color);
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        
+        /* Hero section */
+        .hero {
+            position: relative;
+            margin-bottom: 50px;
+        }
+        
+        .hero-image {
+            height: 600px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            color: var(--white);
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero-text {
+            color: var(--white);
+            font-size: 22px;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .hero-cta {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 15px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+        
+        .hero-cta:hover {
+            background-color: #e1ad39;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .hero-phone {
+            display: inline-block;
+            background-color: var(--white);
+            color: var(--secondary-color);
+            padding: 15px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+        
+        .hero-phone:hover {
+            background-color: #f5f5f5;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            font-size: 36px;
+            color: var(--secondary-color);
+            text-align: center;
+            margin: 40px 0;
+            position: relative;
+        }
+        
+        h1:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 15px auto 0;
+        }
+        
+        h2, .section-title {
+            font-size: 36px;
+            color: var(--secondary-color);
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 15px auto 0;
+        }
+        
+        .service-categories {
+            padding: 50px 0;
+            background-color: var(--light-gray);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .service-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--primary-color);
+        }
+        
+        .service-content {
+            padding: 20px;
+        }
+        
+        .service-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+        
+        .service-description {
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #e1ad39; /* Slightly darker yellow */
+        }
+        
+        .detailed-services {
+            padding: 50px 0;
+        }
+        
+        .accordion {
+            margin-bottom: 15px;
+            border: 1px solid var(--medium-gray);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .accordion-header {
+            background-color: var(--white);
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .accordion-header:hover {
+            background-color: var(--light-gray);
+        }
+        
+        .accordion-content {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background-color: var(--white);
+        }
+        
+        .accordion-content.active {
+            max-height: 1000px;
+            padding: 20px;
+        }
+        
+        .service-list {
+            margin-top: 15px;
+        }
+        
+        .service-list h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+        }
+        
+        .service-list ul {
+            list-style-position: inside;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .service-list li {
+            margin-bottom: 5px;
+        }
+        
+        .contact-banner {
+            background-color: var(--primary-color);
+            padding: 40px 0;
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .contact-banner h2 {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+        
+        .contact-banner p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .banner-cta {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        .banner-cta:hover {
+            background-color: #222;
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 24px;
+            }
+        }
+        
+        /* Company Highlight Section */
+        .company-highlight {
+            padding: 60px 0;
+            background-color: var(--light-gray);
+        }
+        
+        .highlight-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .highlight-image {
+            flex: 1;
+        }
+        
+        .highlight-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .highlight-text {
+            flex: 1;
+        }
+        
+        .highlight-text h2 {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        
+        .highlight-text p {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        
+        .highlight-features {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        
+        .highlight-features li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .highlight-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .phone-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 12px 25px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .phone-button:hover {
+            background-color: #e1ad39;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        /* Footer styles */
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .footer-logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--white);
+            margin-bottom: 15px;
+        }
+        
+        .footer-logo span {
+            color: var(--primary-color);
+        }
+        
+        .footer-company p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 20px;
+        }
+        
+        .footer-contact h3,
+        .footer-areas h3 {
+            color: var(--white);
+            font-size: 18px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-contact h3:after,
+        .footer-areas h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        .footer-contact p,
+        .footer-areas p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 10px;
+        }
+        
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .footer-bottom p {
+            color: rgba(255,255,255,0.5);
+        }
+        
+        .footer-bottom a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-bottom a:hover {
+            color: var(--primary-color);
+        }
+        
+        @media (max-width: 768px) {
+            .highlight-content {
+                flex-direction: column;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero-text {
+                font-size: 18px;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .service-card img {
+                height: 200px;
+            }
+            
+            .hero-image {
+                height: 400px;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .hero-text {
+                font-size: 16px;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            h1, .section-title {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-image" style="background-image: url('https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-jacksonville-home-repair-hero1.webp');">
+                <div class="hero-overlay">
+                    <div class="container">
+                        <h1>Professional Handyman Services in Jacksonville</h1>
+                        <p class="hero-text">Quality workmanship, reliable service, and attention to detail for all your home improvement needs</p>
+                        <div class="hero-buttons">
+                            <a href="#service-categories" class="hero-cta">View Our Services</a>
+                            <a href="tel:+1234567890" class="hero-phone">Call (123) 456-7890</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="container">
+            <h2 class="section-title">Our Handyman Services in Jacksonville</h2>
+        </div>
+        
+        <section class="service-categories">
+            <div class="container">
+                <h2>Service Categories</h2>
+                <div class="services-grid">
+                    <!-- Commercial and Residential Property Maintenance -->
+                    <div class="service-card">
+                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-jacksonville-services.webp" alt="Commercial and residential property maintenance services in Jacksonville" title="Property Maintenance">
+                        <div class="service-content">
+                            <div class="service-title">Commercial and Residential Property Maintenance</div>
+                            <p class="service-description">Solutions for businesses, offices, and retail stores. Routine repairs, installations, and upkeep for smooth operations. Light and plumbing fixture install, painting, appliances, general maintenance, furniture repair, and more.</p>
+                            <a href="#home-repairs" class="cta-button">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Rental Property and Airbnb Management -->
+                    <div class="service-card">
+                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-jacksonville-patio.webp" alt="Rental property and Airbnb management services in Jacksonville" title="Rental Management">
+                        <div class="service-content">
+                            <div class="service-title">Rental Property and Airbnb Management</div>
+                            <p class="service-description">Post move-out inspection and reset, maintenance, tenant communication, coordinating repairs, small renovations. Furniture setup, interior design, regular property inspections, and more.</p>
+                            <a href="#rental-management" class="cta-button">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Aging in Place Modifications -->
+                    <div class="service-card">
+                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-jacksonville-carbon-replacement.webp" alt="Aging in place home modifications in Jacksonville" title="Aging in Place">
+                        <div class="service-content">
+                            <div class="service-title">Aging in Place Modifications</div>
+                            <p class="service-description">Enhance safety and comfort in your home with our aging in place modifications. We specialize in making homes more accessible for seniors and individuals with mobility challenges.</p>
+                            <a href="#aging-in-place" class="cta-button">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Furniture and Custom Builds -->
+                    <div class="service-card">
+                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-jacksonville-custom-project.webp" alt="Furniture assembly and custom builds in Jacksonville" title="Custom Furniture">
+                        <div class="service-content">
+                            <div class="service-title">Furniture and Custom Builds</div>
+                            <p class="service-description">Transform your space with our furniture assembly and custom builds services. Whether you need help assembling flat-pack furniture or desire unique, handcrafted pieces.</p>
+                            <a href="#furniture-builds" class="cta-button">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Equipment and Pool Pump Covers -->
+                    <div class="service-card">
+                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-jacksonville-landscape.webp" alt="Pool equipment and pump covers in Jacksonville" title="Pool Equipment">
+                        <div class="service-content">
+                            <div class="service-title">Equipment and Pool Pump Covers</div>
+                            <p class="service-description">Protect your pool equipment with our custom equipment pads and covers. We offer durable concrete pad installations for stability, along with tailored covers for protection.</p>
+                            <a href="#pool-equipment" class="cta-button">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Energy Efficient Upgrades -->
+                    <div class="service-card">
+                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-jacksonville-insulation.webp" alt="Energy efficient home upgrades in Jacksonville" title="Energy Upgrades">
+                        <div class="service-content">
+                            <div class="service-title">Energy Efficient Upgrades</div>
+                            <p class="service-description">Reduce your energy bills and environmental footprint with our energy-efficient upgrades. We provide insulation improvements, energy-efficient windows and doors, and more.</p>
+                            <a href="#energy-upgrades" class="cta-button">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Custom and Kit Playhouses -->
+                    <div class="service-card">
+                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-jacksonville-dry-wall.webp" alt="Custom playhouses and playset installation in Jacksonville" title="Custom Playhouses">
+                        <div class="service-content">
+                            <div class="service-title">Custom and Kit Playhouses</div>
+                            <p class="service-description">Spark your children's imagination with our expertly crafted custom playhouses. Whether you want a whimsical treehouse, a cozy cottage, or a mini adventure fort.</p>
+                            <a href="#playhouses" class="cta-button">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Emergency Tarp and Storm Prep -->
+                    <div class="service-card">
+                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-jacksonville-roofing.webp" alt="Emergency tarp and storm preparation services in Jacksonville" title="Storm Prep">
+                        <div class="service-content">
+                            <div class="service-title">Emergency Tarp and Storm Prep</div>
+                            <p class="service-description">Protect your home from unexpected weather damage with our emergency tarp and storm preparation services. We provide fast, reliable solutions to safeguard your property.</p>
+                            <a href="#storm-prep" class="cta-button">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="detailed-services">
+            <div class="container">
+                <h2>Detailed Service Offerings</h2>
+                
+                <!-- Accordion Items -->
+                <div class="accordion" id="home-repairs">
+                    <div class="accordion-header">
+                        Home Repairs & Maintenance <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="service-list">
+                            <h3>Smart Home Device Installation</h3>
+                            <ul>
+                                <li>Upgrade your heating and cooling efficiency.</li>
+                                <li>Smart Security Camera Setup: Enhance home security with easy-to-use cameras.</li>
+                                <li>Smart Lighting Installation: Install smart bulbs or lighting systems for convenience.</li>
+                                <li>Smart Doorbell Camera Installation: Monitor your front door with video capabilities.</li>
+                                <li>Smart Home Hub Setup: Integrate various smart devices for seamless control.</li>
+                            </ul>
+                            
+                            <h3>Electrical Repairs and Upgrades</h3>
+                            <ul>
+                                <li>Light Fixture Replacement: Upgrade outdated lighting with modern fixtures.</li>
+                                <li>Ceiling Fan Installation: Improve airflow and energy efficiency.</li>
+                                <li>Outlet Installation or Replacement: Add or replace electrical outlets as needed.</li>
+                                <li>Circuit Breaker Replacement: Ensure your electrical system is safe and functional.</li>
+                                <li>Install Dimmers and Timers: Enhance lighting control and ambiance.</li>
+                            </ul>
+                            
+                            <h3>Plumbing Repairs</h3>
+                            <ul>
+                                <li>Leaky Faucet Repair: Fix drips and save on water bills.</li>
+                                <li>Clogged Drain Cleaning: Clear blockages in sinks, tubs, or toilets.</li>
+                                <li>Toilet Repair: Fix running toilets or replace worn parts.</li>
+                                <li>Water Heater Maintenance: Check and service your water heater for optimal performance.</li>
+                            </ul>
+                            
+                            <h3>Flooring Installation & Repair</h3>
+                            <ul>
+                                <li>Laminate Flooring Installation: Enhance any room with stylish laminate.</li>
+                                <li>Repairs in the floor</li>
+                            </ul>
+                            
+                            <h3>Exterior Maintenance</h3>
+                            <ul>
+                                <li>Deck Repair: Fix loose boards and ensure safety on your outdoor deck.</li>
+                                <li>Siding Maintenance: Repair or replace damaged siding for improved aesthetics.</li>
+                                <li>Pressure Washing: Clean driveways, patios, and siding for a fresh appearance.</li>
+                                <li>Fence Repair: Fix or replace broken fence panels to maintain privacy and security.</li>
+                            </ul>
+                            
+                            <h3>Painting and Touch-Ups</h3>
+                            <ul>
+                                <li>Interior Room Painting: Refresh your home's look with new colors.</li>
+                                <li>Exterior House Painting: Protect and beautify your home's exterior.</li>
+                                <li>Trim and Molding Painting: Add finishing touches to your interior design.</li>
+                                <li>Touch-Up Painting: Cover scuffs and marks for a polished finish.</li>
+                            </ul>
+                            
+                            <h3>Window and Door Repairs</h3>
+                            <ul>
+                                <li>Window Repair: Fix broken panes or sashes for better insulation.</li>
+                                <li>Weather Stripping Installation: Improve energy efficiency by sealing gaps.</li>
+                                <li>Door Lock Replacement: Upgrade or replace old locks for better security.</li>
+                                <li>Sliding Door Repair: Fix track issues and enhance functionality.</li>
+                                <li>Screen Repair or Replacement: Fix or replace damaged window and door screens.</li>
+                            </ul>
+                            
+                            <h3>Drywall Repair</h3>
+                            <ul>
+                                <li>Patch Holes and Cracks: Repair damage from nails, screws, or accidents.</li>
+                                <li>Water Damage Repair: Restore drywall affected by leaks or moisture.</li>
+                                <li>Texture Matching: Match existing textures for a seamless look after repairs.</li>
+                                <li>Drywall Installation: Install new drywall for renovations or additions.</li>
+                                <li>Corner Bead Repair: Fix damaged corners for a clean finish.</li>
+                            </ul>
+                            
+                            <h3>Basic Carpentry</h3>
+                            <ul>
+                                <li>Shelving Installation: Build and install custom shelves for storage.</li>
+                                <li>Wooden Deck Construction: Build a new deck for outdoor enjoyment.</li>
+                                <li>Furniture Assembly: Assemble furniture items from leading retailers.</li>
+                                <li>Custom Woodwork: Create unique wood projects tailored to your needs.</li>
+                            </ul>
+                            
+                            <h3>Home Organization and Decluttering Services</h3>
+                            <ul>
+                                <li>Closet Organization: Maximize space and improve functionality in closets.</li>
+                                <li>Garage Organization: Create a functional and clutter-free garage space.</li>
+                                <li>Kitchen Pantry Organization: Optimize pantry space with effective systems.</li>
+                                <li>Home Office Setup: Organize your workspace for better productivity.</li>
+                                <li>Decluttering Sessions: Assist in sorting and removing unwanted items.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion" id="furniture-builds">
+                    <div class="accordion-header">
+                        Furniture Assembly and Custom Builds <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="service-list">
+                            <h3>Flat-Pack Furniture Assembly</h3>
+                            <ul>
+                                <li>IKEA Furniture Assembly: Assemble popular IKEA items like beds, dressers, and bookshelves.</li>
+                                <li>Entertainment Center Setup: Build and install entertainment units or media centers.</li>
+                                <li>Office Furniture Assembly: Put together desks, chairs, and filing cabinets for home offices.</li>
+                                <li>Outdoor Furniture Assembly: Assemble patio sets, benches, and garden furniture.</li>
+                                <li>Children's Furniture Assembly: Assemble cribs, playsets, and storage solutions for kids.</li>
+                            </ul>
+                            
+                            <h3>Custom Shelving and Storage Solutions</h3>
+                            <ul>
+                                <li>Built-In Shelving Units: Design and build custom shelves for living spaces or closets.</li>
+                                <li>Garage Storage Systems: Create effective shelving and storage solutions for garages.</li>
+                                <li>Pantry Shelving: Build customized shelves for optimal organization in pantries.</li>
+                                <li>Closet Organization Systems: Install custom shelving and hanging systems for closets.</li>
+                                <li>Bathroom Storage Solutions: Design and build shelves or cabinets for bathrooms to maximize space.</li>
+                            </ul>
+                            
+                            <h3>Custom Tables and Desks</h3>
+                            <ul>
+                                <li>Dining Table Construction: Build custom dining tables to fit your space and style.</li>
+                                <li>Coffee Table Creation: Design and build unique coffee tables tailored to your needs.</li>
+                                <li>Home Office Desks: Create custom desks that fit your workspace and aesthetic.</li>
+                                <li>Console Tables: Build stylish console tables for entryways and hallways.</li>
+                                <li>Outdoor Tables: Construct durable and weather-resistant tables for patios or decks.</li>
+                            </ul>
+                            
+                            <h3>Furniture Repair and Refinishing</h3>
+                            <ul>
+                                <li>Chair Repair: Fix broken chairs, including re-gluing and re-upholstering.</li>
+                                <li>Table Refinishing: Restore the finish on wooden tables to bring back their original luster.</li>
+                                <li>Wood Furniture Touch-Ups: Fix scratches, dents, and blemishes on wooden furniture.</li>
+                            </ul>
+                            
+                            <h3>Custom Built-Ins and Cabinetry</h3>
+                            <ul>
+                                <li>Bookcase Installation: Design and build custom bookcases to fit any space.</li>
+                                <li>Bathroom Vanity Construction: Build and install custom vanities for bathrooms.</li>
+                                <li>Mudroom Storage Solutions: Create built-in storage solutions for entryways and mudrooms.</li>
+                                <li>Entertainment Center Builds: Design and construct custom entertainment centers to fit your equipment.</li>
+                            </ul>
+                            
+                            <h3>Assembly of Specialty Items</h3>
+                            <ul>
+                                <li>Fitness Equipment Assembly: Assemble exercise machines, weights, and home gym setups.</li>
+                                <li>Playset Assembly: Assemble outdoor playsets and swing sets for children.</li>
+                                <li>Bicycles and Scooters: Assemble bikes or scooters for recreational use.</li>
+                                <li>Artwork and Display Installation: Hang large artwork or display cases securely.</li>
+                                <li>Aquarium Setup: Assemble and install aquariums, including filtration systems.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion" id="aging-in-place">
+                    <div class="accordion-header">
+                        Aging in Place Modifications <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="service-list">
+                            <h3>Bathroom Modifications</h3>
+                            <ul>
+                                <li>Grab Bar Installation: Install grab bars near toilets and in showers to prevent falls.</li>
+                                <li>Walk-In Shower Conversion: Convert traditional bathtubs into accessible walk-in showers.</li>
+                                <li>Non-Slip Flooring Installation: Replace flooring with non-slip materials to enhance safety.</li>
+                                <li>Raised Toilet Installation: Install higher toilets for easier access.</li>
+                                <li>Shower Bench Installation: Add a sturdy bench in the shower for convenience and safety.</li>
+                            </ul>
+                            
+                            <h3>Kitchen Modifications</h3>
+                            <ul>
+                                <li>Lowered Countertops: Adjust countertop height for easier access while cooking.</li>
+                                <li>Pull-Out Shelves and Drawers: Install pull-out shelves in cabinets for easier reach.</li>
+                                <li>Lever-Style Faucet Installation: Replace traditional faucets with easy-to-use lever handles.</li>
+                                <li>Under-Cabinet Lighting: Install lighting to illuminate workspaces without strain.</li>
+                                <li>Accessible Appliance Installation: Position appliances (like microwaves and ovens) for easy access.</li>
+                            </ul>
+                            
+                            <h3>Living Area Modifications</h3>
+                            <ul>
+                                <li>Ramps for Entryways: Construct ramps to replace stairs for easier access.</li>
+                                <li>Furniture Arrangement: Arrange furniture to create clear pathways and minimize tripping hazards.</li>
+                                <li>Handrails Installation: Install sturdy handrails along staircases or hallways.</li>
+                                <li>Motion-Sensor Lighting: Add motion-sensor lights in hallways and entryways for safety.</li>
+                                <li>Easy-Access Storage Solutions: Create accessible storage solutions to reduce bending and stretching.</li>
+                            </ul>
+                            
+                            <h3>Bedroom Modifications</h3>
+                            <ul>
+                                <li>Bed Height Adjustment: Modify bed height for easier getting in and out.</li>
+                                <li>Nightstand Modification: Install nightstands at accessible heights or with pull-out shelves.</li>
+                                <li>Bedroom Lighting Solutions: Install easy-to-reach bedside lighting and motion-activated lights.</li>
+                                <li>Closet Accessibility Enhancements: Adjust closet rods and shelves for easier access to clothing.</li>
+                                <li>Chair Installation: Add a comfortable chair for resting or dressing.</li>
+                            </ul>
+                            
+                            <h3>Safety Features Installation</h3>
+                            <ul>
+                                <li>Home Security System Installation: Set up a security system with easy-to-use controls and alerts.</li>
+                                <li>Emergency Alert Systems: Install medical alert systems for immediate assistance.</li>
+                                <li>Window and Door Modifications: Ensure windows and doors are easy to operate and secure.</li>
+                                <li>Carbon Monoxide and Smoke Detector Installation: Install detectors in accessible locations.</li>
+                                <li>Visual and Audible Alerts: Implement systems that provide visual and audible alerts for emergencies.</li>
+                            </ul>
+                            
+                            <h3>Outdoor Modifications</h3>
+                            <ul>
+                                <li>Outdoor Lighting Installation: Add well-lit pathways and entry areas for safety.</li>
+                                <li>Gardening and Landscaping Adjustments: Create accessible garden beds and paths.</li>
+                                <li>Handrails for Outdoor Steps: Install handrails on outdoor stairs for added support.</li>
+                                <li>Patio and Deck Modifications: Ensure outdoor spaces are flat and accessible.</li>
+                                <li>Accessible Parking Solutions: Designate accessible parking spaces close to the home.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion" id="energy-upgrades">
+                    <div class="accordion-header">
+                        Energy Efficient Upgrades <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="service-list">
+                            <h3>Insulation Improvements</h3>
+                            <ul>
+                                <li>Attic Insulation Installation: Add or replace insulation in the attic to reduce heating and cooling costs.</li>
+                                <li>Wall Insulation Upgrades: Improve wall insulation to enhance energy efficiency.</li>
+                                <li>Basement Insulation: Insulate basement walls to prevent heat loss and moisture issues.</li>
+                                <li>Crawl Space Insulation: Install insulation in crawl spaces to improve overall home efficiency.</li>
+                                <li>Air Sealing: Seal gaps and cracks around windows, doors, and other openings to prevent drafts.</li>
+                            </ul>
+                            
+                            <h3>Energy-Efficient Windows and Doors</h3>
+                            <ul>
+                                <li>Window Replacement: Install double or triple-pane energy-efficient windows to reduce energy loss.</li>
+                                <li>Storm Window Installation: Add storm windows for additional insulation and protection.</li>
+                                <li>Weather Stripping Installation: Install weather stripping around doors and windows to minimize drafts.</li>
+                                <li>Door Replacement: Replace old doors with energy-efficient models that provide better insulation.</li>
+                                <li>Skylight Installation: Add energy-efficient skylights to enhance natural light and reduce lighting costs.</li>
+                            </ul>
+                            
+                            <h3>Heating and Cooling Upgrades</h3>
+                            <ul>
+                                <li>Programmable Thermostat Installation: Install smart or programmable thermostats for better temperature control.</li>
+                                <li>Ceiling Fan Installation: Install ceiling fans to improve air circulation and reduce reliance on HVAC systems.</li>
+                                <li>Duct Sealing: Seal ductwork to prevent air leaks and improve HVAC efficiency.</li>
+                                <li>HVAC System Maintenance: Perform regular maintenance on heating and cooling systems for optimal performance.</li>
+                                <li>Radiant Barrier Installation: Install radiant barriers in attics to reduce heat gain in summer.</li>
+                            </ul>
+                            
+                            <h3>Lighting Upgrades</h3>
+                            <ul>
+                                <li>LED Lighting Installation: Replace traditional bulbs with energy-efficient LED lighting.</li>
+                                <li>Motion Sensor Lights: Install motion sensor lights in key areas to reduce energy use.</li>
+                                <li>Dimmers and Timers: Add dimmers or timers to control lighting usage and save energy.</li>
+                                <li>Under-Cabinet Lighting: Install energy-efficient under-cabinet lights in kitchens.</li>
+                                <li>Outdoor Lighting Solutions: Upgrade to solar-powered outdoor lighting for efficiency and sustainability.</li>
+                            </ul>
+                            
+                            <h3>Water Efficiency Upgrades</h3>
+                            <ul>
+                                <li>Low-Flow Faucet Installation: Replace standard faucets with low-flow models to reduce water consumption.</li>
+                                <li>High-Efficiency Toilet Installation: Install water-saving toilets to minimize water usage.</li>
+                                <li>Shower head Replacement: Install low-flow showerheads for water conservation.</li>
+                                <li>Irrigation System Upgrades: Upgrade to drip irrigation systems for water-efficient landscaping.</li>
+                                <li>Rain Barrel Installation: Set up rain barrels to collect rainwater for landscaping use.</li>
+                            </ul>
+                            
+                            <h3>Energy Monitoring and Assessments</h3>
+                            <ul>
+                                <li>Energy Audits: Perform assessments to identify areas for energy savings and efficiency improvements.</li>
+                                <li>Smart Home Energy Monitors: Install devices that track and manage energy usage in real-time.</li>
+                                <li>Home Energy Management Systems: Set up systems that integrate various energy-saving devices for optimal efficiency.</li>
+                                <li>Thermal Imaging Inspections: Use thermal imaging to identify heat loss areas in the home.</li>
+                                <li>Energy Efficiency Consulting: Provide consultations on ways to improve energy efficiency based on individual needs.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion" id="custom-pool-pump">
+                    <div class="accordion-header">
+                        Custom Pool Pump Cover Design <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="service-list">
+                            <p>Create tailored covers that fit your specific pool pump and equipment needs.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion" id="concrete-pad">
+                    <div class="accordion-header">
+                        Concrete Pad Installation <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="service-list">
+                            <p>Pour and finish small concrete pads for stable support of pool equipment.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion" id="roof-installation">
+                    <div class="accordion-header">
+                        Roof Installation <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="service-list">
+                            <p><strong>Roof Installation for Sun Protection:</strong> Build covered roofs to shield pool pumps from sunlight and weather elements.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion" id="ventilation-solutions">
+                    <div class="accordion-header">
+                        Ventilation Solutions <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="service-list">
+                            <p><strong>Ventilation Solutions:</strong> Include ventilation features in covers to ensure proper airflow and prevent overheating.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion" id="aesthetic-customization">
+                    <div class="accordion-header">
+                        Aesthetic Customization <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="service-list">
+                            <p><strong>Aesthetic Customization:</strong> Offer options for decorative finishes or colors to match the surrounding landscape.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion" id="playhouses">
+                    <div class="accordion-header">
+                        Custom and Kit Playhouses <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="service-list">
+                            <p>Spark your children's imagination with our expertly crafted custom playhouses. Whether you want a whimsical treehouse, a cozy cottage, or a mini adventure fort, we build safe and durable play spaces designed to inspire endless fun. Our playhouses are crafted with high-quality materials and tailored to fit your yard and your child's dreams. Let us create a magical retreat where your kids can explore, play, and grow in their own unique space.</p>
+                            
+                            <h3>Our Playhouse Services Include:</h3>
+                            <ul>
+                                <li>Custom design consultation</li>
+                                <li>Kit assembly from major manufacturers</li>
+                                <li>Theme-based designs (castles, spaceships, etc.)</li>
+                                <li>Safety-focused construction</li>
+                                <li>Weather-resistant materials</li>
+                                <li>Optional features like slides, swings, and climbing walls</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion" id="storm-prep">
+                    <div class="accordion-header">
+                        Emergency Tarp and Storm Prep <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="service-list">
+                            <p>Protect your home from unexpected weather damage with our emergency tarp and storm preparation services. We provide fast, reliable solutions to safeguard your property, including securing roofs, windows, and other vulnerable areas before or after a storm. Our team is ready to act quickly to minimize damage and keep your home safe during severe weather. Trust us to help you prepare for storms and handle emergencies with expertise and care.</p>
+                            
+                            <h3>Our Storm Services Include:</h3>
+                            <ul>
+                                <li>Emergency roof tarping</li>
+                                <li>Pre-storm home inspection and preparation</li>
+                                <li>Window and door boarding</li>
+                                <li>Post-storm damage assessment</li>
+                                <li>Temporary repairs</li>
+                                <li>Debris removal</li>
+                                <li>Coordination with insurance companies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="contact-banner">
+            <div class="container">
+                <h2>Serving All Jacksonville Communities</h2>
+                <p>From Arlington to Southside, Mandarin to the Beaches, our handyman services cover all of Jacksonville and surrounding areas. Get professional service with a local touch!</p>
+                <a href="#" class="banner-cta">Get a Free Quote</a>
+            </div>
+        </div>
+        
+        <!-- Company Highlight Section -->
+        <section class="company-highlight">
+            <div class="container">
+                <div class="highlight-content">
+                    <div class="highlight-image">
+                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-pros-jacksonville-truck.webp" alt="Crystal Handyman Pros service truck in Jacksonville" title="Our Service Vehicle">
+                    </div>
+                    <div class="highlight-text">
+                        <h2>Your Trusted Jacksonville Handyman</h2>
+                        <p>At Crystal Handyman Pros, we take pride in delivering exceptional craftsmanship and reliable service to homeowners throughout Jacksonville. Our fully equipped service vehicles allow us to respond quickly to your needs with all the tools and materials required to get the job done right the first time.</p>
+                        <ul class="highlight-features">
+                            <li><strong>Locally Owned & Operated</strong> - Serving Jacksonville with pride</li>
+                            <li><strong>Licensed & Insured</strong> - Your protection is our priority</li>
+                            <li><strong>Experienced Professionals</strong> - Skilled in all aspects of home repair</li>
+                            <li><strong>Transparent Pricing</strong> - No hidden fees or surprises</li>
+                            <li><strong>Satisfaction Guaranteed</strong> - We don't leave until you're happy</li>
+                        </ul>
+                        <div class="highlight-cta">
+                            <a href="tel:+1234567890" class="phone-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                </svg>
+                                Call (123) 456-7890
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        // Simple accordion functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const indicator = this.querySelector('span');
+                    
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        content.classList.remove('active');
+                        indicator.textContent = '+';
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        content.classList.add('active');
+                        indicator.textContent = '-';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
