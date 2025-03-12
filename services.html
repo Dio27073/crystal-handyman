@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professional handyman services in Jacksonville, FL. Residential and commercial property maintenance, furniture assembly, aging in place modifications, and more.">
     <title>Our Services | Crystal Handyman Pros | Jacksonville, FL</title>
     <style>
         :root {
-            --primary-color: #f4bf46; /* The yellow color you wanted to keep */
+            --primary-color: #f4bf46; /* Yellow brand color */
             --secondary-color: #333333;
             --accent-color: #2b5797;
             --light-gray: #f5f5f5;
@@ -15,12 +18,18 @@
             --text-color: #333333;
             --white: #ffffff;
         }
+        h1, h2, h3, h4, h5, h6, .section-title, .service-title {
+            font-family: 'Roboto', sans-serif !important;
+            font-weight: 700 !important; /* Bold weight */
+            letter-spacing: -0.02em !important; /* Slightly tighter letter spacing */
+            line-height: 1.2 !important; 
+        }
         
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
         }
         
         body {
@@ -34,36 +43,67 @@
             padding: 0 20px;
         }
         
-        header {
-            background-color: var(--white);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            padding: 20px 0;
+        /* Global Typography and Elements */
+        h1, h2, .section-title {
+            color: var(--secondary-color);
+            text-align: center;
+            position: relative;
         }
         
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        h1 {
+            font-size: 36px;
+            margin: 40px 0;
         }
         
-        .logo {
-            font-size: 24px;
+        h1:after, .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 15px auto 0;
+        }
+        
+        h2, .section-title {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        
+        /* Button styles consolidated */
+        .cta-button, .hero-cta, .banner-cta, .phone-button {
+            display: inline-block;
+            text-decoration: none;
             font-weight: bold;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button, .hero-cta, .phone-button {
+            background-color: var(--primary-color);
             color: var(--secondary-color);
         }
         
-        .logo span {
-            color: var(--primary-color);
+        .cta-button {
+            padding: 10px 20px;
         }
         
-        .tagline {
-            font-style: italic;
-            color: var(--accent-color);
-            font-size: 16px;
-            margin-top: 5px;
+        .cta-button:hover, .hero-cta:hover, .phone-button:hover {
+            background-color: #e1ad39;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
         
-        /* Hero section */
+        .banner-cta {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 12px 30px;
+        }
+        
+        .banner-cta:hover {
+            background-color: #222;
+        }
+        
+        /* Hero Section */
         .hero {
             position: relative;
             margin-bottom: 50px;
@@ -72,7 +112,7 @@
         .hero-image {
             height: 600px;
             background-size: cover;
-            background-position: center;
+            background-position: center 40%;
             position: relative;
         }
         
@@ -113,21 +153,8 @@
         }
         
         .hero-cta {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
             padding: 15px 30px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
             font-size: 18px;
-            transition: all 0.3s ease;
-        }
-        
-        .hero-cta:hover {
-            background-color: #e1ad39;
-            transform: translateY(-3px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
         
         .hero-phone {
@@ -148,40 +175,7 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
         
-        h1 {
-            font-size: 36px;
-            color: var(--secondary-color);
-            text-align: center;
-            margin: 40px 0;
-            position: relative;
-        }
-        
-        h1:after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 4px;
-            background-color: var(--primary-color);
-            margin: 15px auto 0;
-        }
-        
-        h2, .section-title {
-            font-size: 36px;
-            color: var(--secondary-color);
-            margin-bottom: 30px;
-            text-align: center;
-            position: relative;
-        }
-        
-        .section-title:after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 4px;
-            background-color: var(--primary-color);
-            margin: 15px auto 0;
-        }
-        
+        /* Service Categories Section */
         .service-categories {
             padding: 50px 0;
             background-color: var(--light-gray);
@@ -229,21 +223,7 @@
             font-size: 15px;
         }
         
-        .cta-button {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-            padding: 10px 20px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        
-        .cta-button:hover {
-            background-color: #e1ad39; /* Slightly darker yellow */
-        }
-        
+        /* Detailed Services Section */
         .detailed-services {
             padding: 50px 0;
         }
@@ -281,6 +261,7 @@
         .accordion-content.active {
             max-height: 1000px;
             padding: 20px;
+            min-height: 100px;
         }
         
         .service-list {
@@ -303,6 +284,7 @@
             margin-bottom: 5px;
         }
         
+        /* Contact Banner */
         .contact-banner {
             background-color: var(--primary-color);
             padding: 40px 0;
@@ -321,43 +303,6 @@
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
-        }
-        
-        .banner-cta {
-            display: inline-block;
-            background-color: var(--secondary-color);
-            color: var(--white);
-            padding: 12px 30px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        
-        .banner-cta:hover {
-            background-color: #222;
-        }
-        
-        footer {
-            background-color: var(--secondary-color);
-            color: var(--white);
-            padding: 40px 0;
-            text-align: center;
-        }
-        
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .services-grid {
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            }
-            
-            h1 {
-                font-size: 28px;
-            }
-            
-            h2 {
-                font-size: 24px;
-            }
         }
         
         /* Company Highlight Section */
@@ -421,95 +366,23 @@
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
             padding: 12px 25px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s ease;
         }
         
-        .phone-button:hover {
-            background-color: #e1ad39;
-            transform: translateY(-3px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        
-        /* Footer styles */
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            margin-bottom: 20px;
-        }
-        
-        .footer-logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: var(--white);
-            margin-bottom: 15px;
-        }
-        
-        .footer-logo span {
-            color: var(--primary-color);
-        }
-        
-        .footer-company p {
-            color: rgba(255,255,255,0.7);
-            margin-bottom: 20px;
-        }
-        
-        .footer-contact h3,
-        .footer-areas h3 {
-            color: var(--white);
-            font-size: 18px;
-            margin-bottom: 20px;
-            position: relative;
-            padding-bottom: 10px;
-        }
-        
-        .footer-contact h3:after,
-        .footer-areas h3:after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 40px;
-            height: 3px;
-            background-color: var(--primary-color);
-        }
-        
-        .footer-contact p,
-        .footer-areas p {
-            color: rgba(255,255,255,0.7);
-            margin-bottom: 10px;
-        }
-        
-        .footer-bottom {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        
-        .footer-bottom p {
-            color: rgba(255,255,255,0.5);
-        }
-        
-        .footer-bottom a {
-            color: rgba(255,255,255,0.7);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .footer-bottom a:hover {
-            color: var(--primary-color);
-        }
-        
+        /* Media Queries - Combined for efficiency */
         @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 24px;
+            }
+            
             .highlight-content {
                 flex-direction: column;
             }
@@ -520,15 +393,6 @@
             
             .hero-text {
                 font-size: 18px;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .footer-bottom {
-                flex-direction: column;
-                text-align: center;
             }
         }
         
@@ -572,23 +436,19 @@
     <main>
         <!-- Hero Section -->
         <section class="hero">
-            <div class="hero-image" style="background-image: url('https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-jacksonville-home-repair-hero1.webp');">
+            <div class="hero-image" style="background-image: url('https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-jacksonville-main-scaled.webp');">
                 <div class="hero-overlay">
                     <div class="container">
                         <h1>Professional Handyman Services in Jacksonville</h1>
                         <p class="hero-text">Quality workmanship, reliable service, and attention to detail for all your home improvement needs</p>
                         <div class="hero-buttons">
-                            <a href="#service-categories" class="hero-cta">View Our Services</a>
-                            <a href="tel:+1234567890" class="hero-phone">Call (123) 456-7890</a>
+                            <a href="https://clienthub.getjobber.com/client_hubs/e99ab011-f2c0-47dd-85dd-da1cdb567fba/public/work_request/new?source=social_media" class="hero-cta">Request Your Free Quota</a>
+                            <a href="tel:+19048595593" class="hero-phone">Call (904) 859-5593</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <div class="container">
-            <h2 class="section-title">Our Handyman Services in Jacksonville</h2>
-        </div>
         
         <section class="service-categories">
             <div class="container">
@@ -596,7 +456,7 @@
                 <div class="services-grid">
                     <!-- Commercial and Residential Property Maintenance -->
                     <div class="service-card">
-                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-jacksonville-services.webp" alt="Commercial and residential property maintenance services in Jacksonville" title="Property Maintenance">
+                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-jacksonville-home-repair-hero1.webp" alt="Commercial and residential property maintenance services in Jacksonville" title="Property Maintenance">
                         <div class="service-content">
                             <div class="service-title">Commercial and Residential Property Maintenance</div>
                             <p class="service-description">Solutions for businesses, offices, and retail stores. Routine repairs, installations, and upkeep for smooth operations. Light and plumbing fixture install, painting, appliances, general maintenance, furniture repair, and more.</p>
@@ -606,7 +466,7 @@
                     
                     <!-- Rental Property and Airbnb Management -->
                     <div class="service-card">
-                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-jacksonville-patio.webp" alt="Rental property and Airbnb management services in Jacksonville" title="Rental Management">
+                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-jacksonville-carbon-replacement.webp" alt="Rental property and Airbnb management services in Jacksonville" title="Rental Management">
                         <div class="service-content">
                             <div class="service-title">Rental Property and Airbnb Management</div>
                             <p class="service-description">Post move-out inspection and reset, maintenance, tenant communication, coordinating repairs, small renovations. Furniture setup, interior design, regular property inspections, and more.</p>
@@ -616,7 +476,7 @@
                     
                     <!-- Aging in Place Modifications -->
                     <div class="service-card">
-                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-jacksonville-carbon-replacement.webp" alt="Aging in place home modifications in Jacksonville" title="Aging in Place">
+                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2024/07/2024-07-09.webp" alt="Aging in place home modifications in Jacksonville" title="Aging in Place">
                         <div class="service-content">
                             <div class="service-title">Aging in Place Modifications</div>
                             <p class="service-description">Enhance safety and comfort in your home with our aging in place modifications. We specialize in making homes more accessible for seniors and individuals with mobility challenges.</p>
@@ -626,7 +486,7 @@
                     
                     <!-- Furniture and Custom Builds -->
                     <div class="service-card">
-                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-jacksonville-custom-project.webp" alt="Furniture assembly and custom builds in Jacksonville" title="Custom Furniture">
+                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-jacksonville-patio.webp" alt="Furniture assembly and custom builds in Jacksonville" title="Custom Furniture">
                         <div class="service-content">
                             <div class="service-title">Furniture and Custom Builds</div>
                             <p class="service-description">Transform your space with our furniture assembly and custom builds services. Whether you need help assembling flat-pack furniture or desire unique, handcrafted pieces.</p>
@@ -636,7 +496,7 @@
                     
                     <!-- Equipment and Pool Pump Covers -->
                     <div class="service-card">
-                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-jacksonville-landscape.webp" alt="Pool equipment and pump covers in Jacksonville" title="Pool Equipment">
+                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-jacksonville-services.webp" alt="Pool equipment and pump covers in Jacksonville" title="Pool Equipment">
                         <div class="service-content">
                             <div class="service-title">Equipment and Pool Pump Covers</div>
                             <p class="service-description">Protect your pool equipment with our custom equipment pads and covers. We offer durable concrete pad installations for stability, along with tailored covers for protection.</p>
@@ -656,7 +516,7 @@
                     
                     <!-- Custom and Kit Playhouses -->
                     <div class="service-card">
-                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-jacksonville-dry-wall.webp" alt="Custom playhouses and playset installation in Jacksonville" title="Custom Playhouses">
+                        <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-jacksonville-custom-project.webp" alt="Custom playhouses and playset installation in Jacksonville" title="Custom Playhouses">
                         <div class="service-content">
                             <div class="service-title">Custom and Kit Playhouses</div>
                             <p class="service-description">Spark your children's imagination with our expertly crafted custom playhouses. Whether you want a whimsical treehouse, a cozy cottage, or a mini adventure fort.</p>
@@ -999,7 +859,9 @@
                     </div>
                     <div class="accordion-content">
                         <div class="service-list">
-                            <p><strong>Ventilation Solutions:</strong> Include ventilation features in covers to ensure proper airflow and prevent overheating.</p>
+                            <p><strong>Ventilation Solutions:</strong> Include ventilation features in covers to ensure proper airflow and prevent overheating.
+                            
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -1064,7 +926,7 @@
             <div class="container">
                 <h2>Serving All Jacksonville Communities</h2>
                 <p>From Arlington to Southside, Mandarin to the Beaches, our handyman services cover all of Jacksonville and surrounding areas. Get professional service with a local touch!</p>
-                <a href="#" class="banner-cta">Get a Free Quote</a>
+                <a href="https://clienthub.getjobber.com/client_hubs/e99ab011-f2c0-47dd-85dd-da1cdb567fba/public/work_request/new?source=social_media" class="banner-cta">Request Your Free Quote</a>
             </div>
         </div>
         
@@ -1086,11 +948,11 @@
                             <li><strong>Satisfaction Guaranteed</strong> - We don't leave until you're happy</li>
                         </ul>
                         <div class="highlight-cta">
-                            <a href="tel:+1234567890" class="phone-button">
+                            <a href="tel:+19048595593" class="phone-button">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                                 </svg>
-                                Call (123) 456-7890
+                                Call (904) 859-5593
                             </a>
                         </div>
                     </div>
@@ -1109,13 +971,16 @@
                     const content = this.nextElementSibling;
                     const indicator = this.querySelector('span');
                     
-                    if (content.style.maxHeight) {
+                    if (content.classList.contains('active')) {
+                        // Closing the accordion
                         content.style.maxHeight = null;
                         content.classList.remove('active');
                         indicator.textContent = '+';
                     } else {
-                        content.style.maxHeight = content.scrollHeight + 'px';
+                        // Opening the accordion
                         content.classList.add('active');
+                        // Give it a generous fixed height for small content
+                        content.style.maxHeight = Math.max(content.scrollHeight, 100) + 'px';
                         indicator.textContent = '-';
                     }
                 });
