@@ -14,10 +14,7 @@
   <!-- Hero Section - No Image Design -->
   <div class="hero-section">
     <div class="hero-background">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
-      <div class="shape shape-4"></div>
+      <!-- Removed decorative shapes -->
     </div>
     <div class="hero-content">
       <div class="hero-text">
@@ -55,7 +52,7 @@
         
         <div class="service-item">
           <div class="service-image-container">
-            <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-paintmatch.webp" alt="Paint color matching by Jacksonville handyman service" class="service-image" />
+            <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-color-matching.webp" alt="Paint color matching by Jacksonville handyman service" class="service-image" />
           </div>
           <div class="service-content">
             <h3>Professional Color Matching</h3>
@@ -65,7 +62,7 @@
 
         <div class="service-item">
           <div class="service-image-container">
-            <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/painting-patch-jacksonville.webp" alt="Wall patch and paint repair by Crystal Handyman Pros Jacksonville" class="service-image" />
+            <img src="https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-patchfix.webp" alt="Wall patch and paint repair by Crystal Handyman Pros Jacksonville" class="service-image" />
           </div>
           <div class="service-content">
             <h3>Patch & Paint Repairs</h3>
@@ -144,12 +141,20 @@
             </li>
           </ul>
         </div>
-        
+
         <div class="quote-box">
           <div class="quote-content">
             <h3>Ready to Refresh Your Space?</h3>
             <p>Don't live with scuffs, chips, or damaged paint any longer. Our Jacksonville painting touch-up services can restore your home's beauty quickly and affordably!</p>
             <a href="https://clienthub.getjobber.com/client_hubs/e99ab011-f2c0-47dd-85dd-da1cdb567fba/public/work_request/new?source=social_media" class="cta-button">Request Your Free Quote</a>
+            <div class="cta-phone-container">
+              <a href="tel:9045551234" class="cta-phone-link">
+                <svg class="phone-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.045 15.045 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM19 12h2a9 9 0 0 0-9-9v2c3.87 0 7 3.13 7 7z"/>
+                </svg>
+                Call For Fast Service
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -545,51 +550,152 @@ img {
 
 /* Quote Box */
 .quote-box {
-  background: linear-gradient(135deg, #f7a500 0%, #f7c042 100%);
-  border-radius: 10px;
+  background: linear-gradient(135deg, #203A43 0%, #2C5364 100%);
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 25px rgba(247, 165, 0, 0.25);
-  max-width: 800px; /* Added to control width */
-  margin: 0 auto; /* Added to center the quote box */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid #f7a500;
+}
+
+.quote-box:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23f7a500' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+  opacity: 0.3;
 }
 
 .quote-content {
-  padding: 40px;
+  padding: 50px 40px;
   text-align: center;
   color: white;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .quote-content h3 {
-  font-size: 28px;
-  margin-bottom: 15px;
+  font-size: 32px;
+  margin-bottom: 20px;
   color: white;
+  position: relative;
+  display: inline-block;
+}
+
+.quote-content h3:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #f7a500;
 }
 
 .quote-content p {
   font-size: 18px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 500px;
+}
+
+/* Phone CTA Styling */
+.cta-phone-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cta-phone-link {
+  display: flex;
+  align-items: center;
+  color: #f7a500;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.cta-phone-link:hover {
   color: white;
+}
+
+.phone-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  fill: #f7a500;
+  animation: pulse 2s infinite;
+  transition: fill 0.3s ease;
+}
+
+.cta-phone-link:hover .phone-icon {
+  fill: white;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* CTA Button */
 .cta-button {
   display: inline-block;
-  padding: 14px 28px;
-  background-color: white;
-  color: #f7a500;
+  padding: 16px 32px;
+  background-color: #f7a500;
+  color: white;
   text-decoration: none;
-  border-radius: 30px;
-  font-size: 16px;
+  border-radius: 50px;
+  font-size: 18px;
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(247, 165, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 2px solid #f7a500;
+}
+
+.cta-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.7, 0, 0.3, 1);
 }
 
 .cta-button:hover {
-  background-color: #f0f0f0;
+  color: #f7a500;
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(247, 165, 0, 0.4);
+}
+
+.cta-button:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .cta-button.primary {

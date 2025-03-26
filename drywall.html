@@ -7,24 +7,19 @@
     <meta name="description" content="Expert drywall repair services in Jacksonville, FL. Patch holes, fix cracks, and restore water damage. Fast, reliable service with free quotes.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Hero Section - No Image Design -->
   <div class="hero-section">
     <div class="hero-background">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
-      <div class="shape shape-4"></div>
     </div>
     <div class="hero-content">
       <div class="hero-text">
         <span class="pre-heading">Professional Services</span>
         <h1>Drywall Repair <span class="location">in</span></h1>
         <h1><span class="location">Jacksonville, FL</span></h1>
-
         <p class="hero-tagline">Expert Repairs That Restore Your Walls to Perfect Condition</p>
         <div class="cta-container">
           <a href="https://clienthub.getjobber.com/client_hubs/e99ab011-f2c0-47dd-85dd-da1cdb567fba/public/work_request/new?source=social_media" class="cta-button primary">Request Free Quote</a>
@@ -150,8 +145,16 @@
         <div class="quote-box">
           <div class="quote-content">
             <h3>Need Drywall Repair in Jacksonville?</h3>
-            <p>Don't let wall damage affect your home's appearance and value. Our professionals deliver perfect repairs every time.</p>
+            <p>Don't let wall damage affect your home's appearance and value. Contact Crystal Handyman Pros today!</p>
             <a href="https://clienthub.getjobber.com/client_hubs/e99ab011-f2c0-47dd-85dd-da1cdb567fba/public/work_request/new?source=social_media" class="cta-button">Request Your Free Quote</a>
+            <div class="cta-phone-container">
+              <a href="tel:9045551234" class="cta-phone-link">
+                <svg class="phone-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.045 15.045 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM19 12h2a9 9 0 0 0-9-9v2c3.87 0 7 3.13 7 7z"/>
+                </svg>
+                Call For Same-Day Service
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -160,7 +163,6 @@
 
   <!-- CSS Styling -->
   <style>
-    /* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -168,9 +170,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: 'Open Sans', sans-serif;
   background-color: #ffffff;
   color: #333;
   line-height: 1.6;
@@ -183,7 +183,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   line-height: 1.3;
   margin-bottom: 20px;
@@ -200,59 +200,14 @@ img {
   display: block;
 }
 
-/* Hero Section - No Image Design */
+/* Hero Section */
 .hero-section {
   position: relative;
-  background: linear-gradient(135deg, #004d7a 0%, #008793 50%, #00bf72 100%);
+  background: linear-gradient(135deg, #0F2027 0%, #203A43 50%, #2C5364 100%);
   padding: 80px 0 60px;
   margin-bottom: 60px;
   overflow: hidden;
   color: white;
-}
-
-.hero-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.shape {
-  position: absolute;
-  background-color: rgba(247, 165, 0, 0.15);
-  border-radius: 50%;
-}
-
-.shape-1 {
-  width: 300px;
-  height: 300px;
-  top: -100px;
-  right: 10%;
-}
-
-.shape-2 {
-  width: 200px;
-  height: 200px;
-  bottom: -50px;
-  left: 5%;
-}
-
-.shape-3 {
-  width: 150px;
-  height: 150px;
-  top: 20%;
-  left: 15%;
-  background-color: rgba(255, 255, 255, 0.08);
-}
-
-.shape-4 {
-  width: 100px;
-  height: 100px;
-  bottom: 20%;
-  right: 20%;
-  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .hero-content {
@@ -264,17 +219,15 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Added to properly center the content */
+  justify-content: center;
   text-align: center;
 }
 
 .hero-text {
-  margin-bottom: 40px;
   text-align: center;
   width: 100%;
   max-width: 800px;
-  margin-left: auto; /* Added to ensure horizontal centering */
-  margin-right: auto; /* Added to ensure horizontal centering */
+  margin: 0 auto 40px;
 }
 
 .pre-heading {
@@ -294,14 +247,9 @@ img {
   font-size: 48px;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 20px;
-  max-width: 800px;
   line-height: 1.2;
   text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  text-align: center;
-  width: 100%;
-  margin-left: auto; /* Added to ensure horizontal centering */
-  margin-right: auto; /* Added to ensure horizontal centering */
+  margin: 0 auto 20px;
 }
 
 .location {
@@ -311,19 +259,14 @@ img {
 .hero-tagline {
   font-size: 22px;
   color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 30px;
-  max-width: 700px;
-  text-align: center;
-  width: 100%;
-  margin-left: auto; /* Added to ensure horizontal centering */
-  margin-right: auto; /* Added to ensure horizontal centering */
+  margin: 0 auto 30px;
 }
 
 .cta-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%; /* Added to ensure full width */
+  width: 100%;
 }
 
 .cta-note {
@@ -334,7 +277,7 @@ img {
 
 /* Content Section */
 .content-section {
-  padding: 0 0 60px;
+  padding-bottom: 60px;
 }
 
 .intro-text {
@@ -390,7 +333,6 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
 }
 
 .service-content {
@@ -477,13 +419,13 @@ img {
 /* CTA Section */
 .cta-section {
   margin: 50px 0;
-  text-align: center; /* Added to center the entire section */
+  text-align: center;
 }
 
 .benefits-container {
   margin-bottom: 40px;
   display: flex;
-  justify-content: center; /* Added to center the benefits container */
+  justify-content: center;
   width: 100%;
 }
 
@@ -492,15 +434,15 @@ img {
   grid-template-columns: repeat(2, 1fr);
   gap: 25px;
   list-style: none;
-  max-width: 800px; /* Added to control the width */
-  margin: 0 auto; /* Added to center the list */
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .benefits-list li {
   display: flex;
   align-items: flex-start;
   gap: 15px;
-  text-align: left; /* Keep text left-aligned for readability */
+  text-align: left;
 }
 
 .check-icon {
@@ -534,69 +476,152 @@ img {
 
 /* Quote Box */
 .quote-box {
-  background: linear-gradient(135deg, #f7a500 0%, #f7c042 100%);
-  border-radius: 10px;
+  background: linear-gradient(135deg, #203A43 0%, #2C5364 100%);
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 25px rgba(247, 165, 0, 0.25);
-  max-width: 800px; /* Added to control width */
-  margin: 0 auto; /* Added to center the quote box */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid #f7a500;
+}
+
+.quote-box:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23f7a500' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+  opacity: 0.3;
 }
 
 .quote-content {
-  padding: 40px;
+  padding: 50px 40px;
   text-align: center;
   color: white;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .quote-content h3 {
-  font-size: 28px;
-  margin-bottom: 15px;
+  font-size: 32px;
+  margin-bottom: 20px;
   color: white;
+  position: relative;
+  display: inline-block;
+}
+
+.quote-content h3:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #f7a500;
 }
 
 .quote-content p {
   font-size: 18px;
-  margin-bottom: 25px;
-  color: white;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 500px;
 }
 
 /* CTA Button */
 .cta-button {
   display: inline-block;
-  padding: 14px 28px;
-  background-color: white;
-  color: #f7a500;
+  padding: 16px 32px;
+  background-color: #f7a500;
+  color: white;
   text-decoration: none;
-  border-radius: 30px;
-  font-size: 16px;
+  border-radius: 50px;
+  font-size: 18px;
   font-weight: 600;
-  font-family: 'Roboto', sans-serif;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: 'Montserrat', sans-serif;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(247, 165, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 2px solid #f7a500;
+}
+
+.cta-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.7, 0, 0.3, 1);
 }
 
 .cta-button:hover {
-  background-color: #f0f0f0;
+  color: #f7a500;
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(247, 165, 0, 0.4);
 }
 
-.cta-button.primary {
-  background-color: #f7a500;
+.cta-button:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Phone CTA */
+.cta-phone-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cta-phone-link {
+  display: flex;
+  align-items: center;
+  color: #f7a500;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.cta-phone-link:hover {
   color: white;
 }
 
-.cta-button.primary:hover {
-  background-color: #e69500;
+.phone-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  fill: #f7a500;
+  animation: pulse 2s infinite;
+  transition: fill 0.3s ease;
 }
 
-/* Footer */
-.site-footer {
-  background-color: #222;
-  color: #aaa;
-  padding: 20px 0;
-  font-size: 14px;
-  text-align: center;
+.cta-phone-link:hover .phone-icon {
+  fill: white;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Responsive Design */
@@ -619,11 +644,9 @@ img {
     font-size: 32px;
   }
   
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .benefits-list {
+  .services-grid,
+  .benefits-list,
+  .text-columns {
     grid-template-columns: 1fr;
   }
   
@@ -631,8 +654,17 @@ img {
     font-size: 28px;
   }
   
-  .text-columns {
-    grid-template-columns: 1fr;
+  .quote-content {
+    padding: 40px 25px;
+  }
+  
+  .quote-content h3 {
+    font-size: 26px;
+  }
+  
+  .cta-button {
+    padding: 14px 28px;
+    font-size: 16px;
   }
 }
 
@@ -655,6 +687,12 @@ img {
   
   .quote-content h3 {
     font-size: 24px;
+  }
+  
+  .cta-button {
+    padding: 12px 24px;
+    width: 100%;
+    font-size: 16px;
   }
 }
   </style>
