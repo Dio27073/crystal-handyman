@@ -318,6 +318,14 @@ img {
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.service-item:nth-child(2) .service-image {
+  object-position: center 95%; /* This shifts the focus point lower */
+}
+
+/* For the recessed lighting image - move focus higher */
+.service-item:nth-child(4) .service-image {
+  object-position: center 25%; /* This shifts the focus point higher */
+}
 
 .service-item:hover {
   transform: translateY(-5px);
