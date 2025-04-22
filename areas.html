@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional handyman services in Jacksonville, FL. Serving Ortega, Riverside, San Marco, Avondale, Deerwood, Beaches, Nocatee, Mandarin and more areas. Trusted local handyman solutions.">
+    <title>Jacksonville Service Areas | Crystal Handyman Pros</title>
+    <style>
+        :root {
+            --primary-color: #f4bf46; /* Yellow brand color */
+            --secondary-color: #333333;
+            --accent-color: #2b5797;
+            --light-gray: #f5f5f5;
+            --medium-gray: #e0e0e0;
+            --text-color: #333333;
+            --white: #ffffff;
+            
+            /* Adding colors for each neighborhood */
+            --ortega-color: #2b5797;
+            --riverside-color: #4a7abf;
+            --sanmarco-color: #3366cc;
+            --deerwood-color: #1a4575;
+            --queens-color: #6690cc;
+            --beaches-color: #5080cc;
+            --nocatee-color: #3c73ba;
+            --mandarin-color: #2a5a94;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1, h2, h3, h4, h5, h6, .section-title, .service-title {
+            font-family: 'Roboto', sans-serif !important;
+            font-weight: 700 !important; /* Bold weight */
+            letter-spacing: -0.02em !important; /* Slightly tighter letter spacing */
+            line-height: 1.2 !important; 
+        }
+        
+        /* Hero Section - Styled version instead of image-based */
+        .hero {
+            position: relative;
+            margin-bottom: 80px;
+            height: 500px;
+            overflow: hidden;
+            background: linear-gradient(120deg, var(--accent-color) 0%, #1c2e4a 100%);
+        }
+        
+        /* City skyline silhouette */
+        .hero::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V120H1200V0ZM0,0L1200,0L1200,120L0,120ZM1185,120h15V105h-15ZM1170,120h15V90h-15ZM1155,120h15V75h-15ZM1140,120h15V90h-15ZM1125,120h15V105h-15ZM1110,120h15V75h-15ZM1095,120h15V105h-15ZM1080,120h15V90h-15ZM1065,120h15V75h-15ZM1050,120h15V60h-15ZM1035,120h15V75h-15ZM1020,120h15V90h-15ZM1005,120h15V75h-15ZM990,120h15V90h-15ZM975,120h15V105h-15ZM960,120h15V75h-15ZM945,120h15V60h-15ZM930,120h15V90h-15ZM915,120h15V105h-15ZM900,120h15V75h-15ZM885,120h15V45h-15ZM870,120h15V75h-15ZM855,120h15V105h-15ZM840,120h15V90h-15ZM825,120h15V75h-15ZM810,120h15V90h-15ZM795,120h15V105h-15ZM780,120h15V90h-15ZM765,120h15V30h-15ZM750,120h15V45h-15ZM735,120h15V75h-15ZM720,120h15V90h-15ZM705,120h15V105h-15ZM690,120h15V45h-15ZM675,120h15V75h-15ZM660,120h15V60h-15ZM645,120h15V30h-15ZM630,120h15V75h-15ZM615,120h15V90h-15ZM600,120h15V45h-15ZM585,120h15V75h-15ZM570,120h15V90h-15ZM555,120h15V45h-15ZM540,120h15V60h-15ZM525,120h15V90h-15ZM510,120h15V75h-15ZM495,120h15V45h-15ZM480,120h15V60h-15ZM465,120h15V90h-15ZM450,120h15V75h-15ZM435,120h15V60h-15ZM420,120h15V90h-15ZM405,120h15V75h-15ZM390,120h15V30h-15ZM375,120h15V60h-15ZM360,120h15V45h-15ZM345,120h15V75h-15ZM330,120h15V90h-15ZM315,120h15V60h-15ZM300,120h15V75h-15ZM285,120h15V45h-15ZM270,120h15V90h-15ZM255,120h15V75h-15ZM240,120h15V45h-15ZM225,120h15V75h-15ZM210,120h15V90h-15ZM195,120h15V60h-15ZM180,120h15V90h-15ZM165,120h15V75h-15ZM150,120h15V45h-15ZM135,120h15V75h-15ZM120,120h15V60h-15ZM105,120h15V90h-15ZM90,120h15V45h-15ZM75,120h15V75h-15ZM60,120h15V60h-15ZM45,120h15V30h-15ZM30,120h15V75h-15ZM15,120h15V45h-15ZM0,120h15V60H0Z' fill='rgba(0,0,0,0.15)'/%3E%3C/svg%3E");
+            background-size: cover;
+        }
+
+        /* Animated pattern overlay */
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: -50%;
+            left: -50%;
+            background: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23ffffff' fill-opacity='0.04' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.5;
+            animation: heroPatternMove 60s linear infinite;
+        }
+        
+        @keyframes heroPatternMove {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            100% {
+                transform: translateY(-20%) rotate(5deg);
+            }
+        }
+        
+        .hero-content {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            z-index: 2;
+        }
+        
+        .hero-text-container {
+            max-width: 800px;
+        }
+        
+        
+        .hero h1 {
+            font-size: 48px;
+            color: var(--white);
+            margin-bottom: 20px;
+            margin-top: 50px;
+            position: relative;
+        }
+        
+        .hero h1::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 15px auto 0;
+        }
+        
+        .hero-text {
+            color: var(--white);
+            font-size: 22px;
+            margin-bottom: 30px;
+            max-width: 800px;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #e1ad39;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .phone-button {
+            display: inline-block;
+            background-color: var(--white);
+            color: var(--secondary-color);
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-left: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .phone-button:hover {
+            background-color: #f5f5f5;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        /* Introduction Section */
+        .intro-section {
+            background-color: var(--white);
+            margin-top: 0px;
+            margin-bottom: 65px;
+            text-align: center;
+        }
+        
+        .intro-section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: var(--secondary-color);
+            position: relative;
+        }
+        
+        .intro-section h2:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 15px auto 0;
+        }
+        
+        .intro-text {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            font-size: 18px;
+        }
+        
+        /* Service Areas Section - REDESIGNED */
+        .areas-section {
+            padding: 70px 0;
+            background-color: var(--white);
+        }
+        
+        .areas-section h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--secondary-color);
+            position: relative;
+        }
+        
+        .areas-section h2:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 15px auto 0;
+        }
+        
+        .area-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        
+        /* New Card Design */
+        .area-card {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.3s ease;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .area-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        /* Top accent bar with neighborhood color */
+        .area-accent {
+            height: 8px;
+            width: 100%;
+        }
+        
+        /* Each neighborhood has its own accent color */
+        #ortega .area-accent {
+            background-color: var(--ortega-color);
+        }
+        
+        #riverside-avondale .area-accent {
+            background-color: var(--riverside-color);
+        }
+        
+        #san-marco .area-accent {
+            background-color: var(--sanmarco-color);
+        }
+        
+        #deerwood .area-accent {
+            background-color: var(--deerwood-color);
+        }
+        
+        #queens-harbour .area-accent {
+            background-color: var(--queens-color);
+        }
+        
+        #beaches .area-accent {
+            background-color: var(--beaches-color);
+        }
+        
+        #nocatee .area-accent {
+            background-color: var(--nocatee-color);
+        }
+        
+        #julington-mandarin .area-accent {
+            background-color: var(--mandarin-color);
+        }
+        
+        .area-header {
+            padding: 18px 20px 5px;
+            border-bottom: 1px solid #eee;
+            background-color: var(--white);
+        }
+        
+        .area-name {
+            font-size: 22px;
+            margin: 0;
+            position: relative;
+            padding-bottom: 10px;
+            color: var(--secondary-color);
+        }
+        
+        .area-content {
+            padding: 15px 20px 20px;
+            background-color: var(--white);
+            flex-grow: 1;
+        }
+        
+        .area-zip {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 4px 10px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        .area-description {
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .area-services {
+            list-style-type: none;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+        
+        .area-services li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+        
+        .area-services li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+            background-color: rgba(244, 191, 70, 0.15);
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+        
+        /* Responsive adjustments for 3-column layout */
+        @media (max-width: 1100px) {
+            .area-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* Call to Action Section */
+        .cta-section {
+            padding: 70px 0;
+            background-color: var(--primary-color);
+            text-align: center;
+        }
+        
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .cta-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+        
+        .cta-text {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: var(--secondary-color);
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .cta-dark {
+            background-color: var(--secondary-color);
+            color: var(--white);
+        }
+        
+        .cta-dark:hover {
+            background-color: #222;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .area-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero-text {
+                font-size: 18px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .phone-button {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+            
+            .area-name {
+                font-size: 24px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .hero-text {
+                font-size: 16px;
+            }
+            
+            .cta-button, .phone-button {
+                width: 100%;
+            }
+            
+            .area-name {
+                font-size: 22px;
+            }
+        }
+
+        .map-section {
+            padding: 0 0 70px 0;
+            background-color: var(--white);
+            text-align: center;
+        }
+
+        .map-section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: var(--secondary-color);
+            position: relative;
+        }
+
+        .map-section h2:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 15px auto 0;
+        }
+
+        .map-container {
+            position: relative;
+            width: 100%;
+            max-width: 1160px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .map-container iframe {
+                height: 350px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .map-container iframe {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section - Styled version -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text-container">
+                    <h1>Serving Jacksonville's Finest Neighborhoods</h1>
+                    <p class="hero-text">Professional handyman services across Jacksonville, FL and surrounding communities</p>
+                    <div>
+                        <a href="https://clienthub.getjobber.com/client_hubs/e99ab011-f2c0-47dd-85dd-da1cdb567fba/public/work_request/new?source=social_media" class="cta-button">Request a Free Quote</a>
+                        <a href="tel:+19048595593" class="phone-button">Call (904) 859-5593</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <div class="container">
+            <h2>Your Local Jacksonville Handyman</h2>
+            <p class="intro-text">Crystal Handyman Pros proudly provides top-quality handyman services to homeowners and businesses throughout Jacksonville and surrounding areas. From historic neighborhoods like Ortega and Riverside to newer communities like Nocatee, our experienced team understands the unique character and needs of each area we serve.</p>
+            <a href="https://clienthub.getjobber.com/client_hubs/e99ab011-f2c0-47dd-85dd-da1cdb567fba/public/work_request/new?source=social_media" class="cta-button">Schedule Your Service</a>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <h2>Service Area Map</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221895.5102218001!2d-81.83625585!3d30.345481000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e5b716f1ceafeb%3A0xc4cd7d3896fcc7e2!2sJacksonville%2C%20FL!5e0!3m2!1sen!2sus!4v1713807615948!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius:10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Service Areas Section -->
+    <section class="areas-section" id="service-areas">
+        <div class="container">
+            <h2>Neighborhoods We Serve</h2>
+            
+            <div class="area-grid">
+                <!-- Ortega -->
+                <div class="area-card" id="ortega">
+                    <div class="area-accent"></div>
+                    <div class="area-header">
+                        <h3 class="area-name">Ortega</h3>
+                    </div>
+                    <div class="area-content">
+                        <span class="area-zip">ZIP Code: 32210</span>
+                        <p class="area-description">Serving Ortega's historic, upscale riverfront homes with specialized handyman services that respect the architectural heritage of this prestigious Jacksonville neighborhood.</p>
+                        <ul class="area-services">
+                            <li>Historic home repairs and restoration</li>
+                            <li>Custom woodwork and crown molding</li>
+                            <li>Window restoration and maintenance</li>
+                            <li>Vintage home character preservation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Riverside/Avondale -->
+                <div class="area-card" id="riverside-avondale">
+                    <div class="area-accent"></div>
+                    <div class="area-header">
+                        <h3 class="area-name">Riverside & Avondale</h3>
+                    </div>
+                    <div class="area-content">
+                        <span class="area-zip">ZIP Codes: 32204, 32205</span>
+                        <p class="area-description">Expert handyman services for the trendy, historic homes of Riverside and Avondale. We specialize in maintaining the character of 1920s bungalows while ensuring modern functionality.</p>
+                        <ul class="area-services">
+                            <li>Historic bungalow repairs and upgrades</li>
+                            <li>Porch repairs and restoration</li>
+                            <li>Custom carpentry for historic details</li>
+                            <li>Drywall texture matching</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- San Marco -->
+                <div class="area-card" id="san-marco">
+                    <div class="area-accent"></div>
+                    <div class="area-header">
+                        <h3 class="area-name">San Marco</h3>
+                    </div>
+                    <div class="area-content">
+                        <span class="area-zip">ZIP Code: 32207</span>
+                        <p class="area-description">Premium handyman services for San Marco's elegant riverfront homes and upscale condos. We deliver exceptional craftsmanship that meets the expectations of this sophisticated neighborhood.</p>
+                        <ul class="area-services">
+                            <li>Luxury home maintenance and repairs</li>
+                            <li>Smart home installation and integration</li>
+                            <li>High-end fixture replacement</li>
+                            <li>Concierge maintenance services</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Deerwood/Deercreek -->
+                <div class="area-card" id="deerwood">
+                    <div class="area-accent"></div>
+                    <div class="area-header">
+                        <h3 class="area-name">Deerwood & Deercreek</h3>
+                    </div>
+                    <div class="area-content">
+                        <span class="area-zip">ZIP Code: 32256</span>
+                        <p class="area-description">Comprehensive handyman services for the prestigious gated communities of Deerwood and Deercreek. Our team provides reliable, professional solutions for these custom homes.</p>
+                        <ul class="area-services">
+                            <li>Preventive maintenance programs</li>
+                            <li>Interior and exterior repairs</li>
+                            <li>Custom fixture installation</li>
+                            <li>Seasonal maintenance services</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Queens Harbour -->
+                <div class="area-card" id="queens-harbour">
+                    <div class="area-accent"></div>
+                    <div class="area-header">
+                        <h3 class="area-name">Queens Harbour</h3>
+                    </div>
+                    <div class="area-content">
+                        <span class="area-zip">ZIP Code: 32225</span>
+                        <p class="area-description">Specialized handyman services for Queens Harbour's exclusive waterfront and golf community homes. We understand the unique challenges of maintaining waterfront properties.</p>
+                        <ul class="area-services">
+                            <li>Deck and dock maintenance</li>
+                            <li>Waterfront property repairs</li>
+                            <li>Luxury bathroom and kitchen upgrades</li>
+                            <li>Smart home technology installation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- The Beaches -->
+                <div class="area-card" id="beaches">
+                    <div class="area-accent"></div>
+                    <div class="area-header">
+                        <h3 class="area-name">The Beaches</h3>
+                    </div>
+                    <div class="area-content">
+                        <span class="area-zip">ZIP Codes: 32082, 32233, 32266</span>
+                        <p class="area-description">Expert handyman services for Ponte Vedra, Neptune, and Atlantic Beach properties. We specialize in maintaining coastal homes and addressing the unique challenges of beach living.</p>
+                        <ul class="area-services">
+                            <li>Salt air corrosion prevention and repair</li>
+                            <li>Deck and patio maintenance</li>
+                            <li>Vacation property upkeep</li>
+                            <li>Hurricane preparation and repairs</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Nocatee -->
+                <div class="area-card" id="nocatee">
+                    <div class="area-accent"></div>
+                    <div class="area-header">
+                        <h3 class="area-name">Nocatee</h3>
+                    </div>
+                    <div class="area-content">
+                        <span class="area-zip">ZIP Code: 32081</span>
+                        <p class="area-description">Professional handyman services for Nocatee's master-planned community. We help maintain your home's value with expert repairs and upgrades tailored to this family-oriented neighborhood.</p>
+                        <ul class="area-services">
+                            <li>Smart home installation and setup</li>
+                            <li>Fixture upgrades and modernization</li>
+                            <li>Regular maintenance subscriptions</li>
+                            <li>Interior and exterior repairs</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Julington Creek/Mandarin -->
+                <div class="area-card" id="julington-mandarin">
+                    <div class="area-accent"></div>
+                    <div class="area-header">
+                        <h3 class="area-name">Julington Creek & Mandarin</h3>
+                    </div>
+                    <div class="area-content">
+                        <span class="area-zip">ZIP Codes: 32223, 32259</span>
+                        <p class="area-description">Reliable handyman services for the suburban luxury homes of Julington Creek and Mandarin. Our team provides trustworthy, professional solutions for these established neighborhoods.</p>
+                        <ul class="area-services">
+                            <li>Fence repairs and installation</li>
+                            <li>Pressure washing services</li>
+                            <li>Interior and exterior maintenance</li>
+                            <li>Tree and storm damage repairs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Work with Jacksonville's Most Trusted Handyman?</h2>
+                <p class="cta-text">Whether you need repairs, maintenance, or improvements for your home or business, Crystal Handyman Pros is ready to help. Our local expertise ensures we understand the unique needs of your Jacksonville neighborhood.</p>
+                <div class="cta-buttons">
+                    <a href="https://clienthub.getjobber.com/client_hubs/e99ab011-f2c0-47dd-85dd-da1cdb567fba/public/work_request/new?source=social_media" class="cta-button cta-dark">Request a Free Quote</a>
+                    <a href="tel:+19048595593" class="cta-button">Call (904) 859-5593</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

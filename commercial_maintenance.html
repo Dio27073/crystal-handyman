@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional commercial maintenance services in Jacksonville, FL. Office repairs, retail store maintenance, commercial property upkeep, and business facility solutions by Crystal Handyman Pros.">
+    <title>Commercial Maintenance Services | Crystal Handyman Pros | Jacksonville, FL</title>
+    <style>
+        :root {
+            --primary-color: #f4bf46; /* Yellow brand color */
+            --secondary-color: #333333;
+            --accent-color: #2b5797;
+            --light-gray: #f5f5f5;
+            --medium-gray: #e0e0e0;
+            --text-color: #333333;
+            --white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1, h2, h3, h4, h5, h6, .section-title, .service-title {
+            font-family: 'Roboto', sans-serif !important;
+            font-weight: 700 !important; /* Bold weight */
+            letter-spacing: -0.02em !important; /* Slightly tighter letter spacing */
+            line-height: 1.2 !important; 
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            margin-bottom: 80px;
+        }
+        
+        .hero-image {
+            height: 500px;
+            background-size: cover;
+            background-position: center 25%;
+            position: relative;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            color: var(--white);
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero-text {
+            color: var(--white);
+            font-size: 22px;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #e1ad39;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .phone-button {
+            display: inline-block;
+            background-color: var(--white);
+            color: var(--secondary-color);
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-left: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .phone-button:hover {
+            background-color: #f5f5f5;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        /* Introduction Section */
+        .intro-section {
+            padding: 50px 0;
+            background-color: var(--white);
+            text-align: center;
+        }
+        
+        .intro-section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: var(--secondary-color);
+            position: relative;
+        }
+        
+        .intro-section h2:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 15px auto 0;
+        }
+        
+        .intro-text {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            font-size: 18px;
+        }
+        
+        /* Service Categories Section */
+        .service-blocks {
+            padding: 70px 0;
+            background-color: var(--light-gray);
+        }
+        
+        .service-blocks h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--secondary-color);
+            position: relative;
+        }
+        
+        .service-blocks h2:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 15px auto 0;
+        }
+        
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-block {
+            background-color: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        
+        .service-block:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .service-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-bottom: 4px solid var(--primary-color);
+        }
+        
+        .service-content {
+            padding: 25px;
+        }
+        
+        .service-title {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+        
+        .service-list {
+            margin-bottom: 20px;
+        }
+        
+        .service-list ul {
+            list-style-type: none;
+            margin-left: 5px;
+        }
+        
+        .service-list li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .service-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        /* Call to Action Section */
+        .cta-section {
+            padding: 70px 0;
+            background-color: var(--primary-color);
+            text-align: center;
+        }
+        
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .cta-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+        
+        .cta-text {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: var(--secondary-color);
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .cta-dark {
+            background-color: var(--secondary-color);
+            color: var(--white);
+        }
+        
+        .cta-dark:hover {
+            background-color: #222;
+        }
+
+        /* Neighborhood */
+        .neighborhood-section {
+        padding: 70px 0;
+        background-color: var(--white);
+        }
+    
+        .neighborhood-section h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--secondary-color);
+            position: relative;
+        }
+        
+        .neighborhood-section h2:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 15px auto 0;
+        }
+        
+        .neighborhood-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .neighborhood-card {
+            background-color: var(--light-gray);
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--primary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .neighborhood-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .neighborhood-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+        
+        .neighborhood-card p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        
+        .neighborhood-services {
+            list-style-type: none;
+            margin-bottom: 0;
+        }
+        
+        .neighborhood-services li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+        
+        .neighborhood-services li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+        
+        .neighborhood-cta {
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .neighborhood-cta p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 25px;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero-text {
+                font-size: 18px;
+            }
+            
+            .services-container, .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .phone-button {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .hero-text {
+                font-size: 16px;
+            }
+            
+            .cta-button, .phone-button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-image" style="background-image: url('https://crystalhandymanpros.com/wp-content/uploads/2025/04/crystal-handyman-commercial_banner-scaled.webp');">
+            <div class="hero-overlay">
+                <div class="container">
+                    <h1>Commercial Maintenance Services</h1>
+                    <p class="hero-text">Professional building maintenance and facility solutions for Jacksonville businesses</p>
+                    <div>
+                        <a href="https://clienthub.getjobber.com/client_hubs/e99ab011-f2c0-47dd-85dd-da1cdb567fba/public/work_request/new?source=social_media" class="cta-button">Request a Free Quote</a>
+                        <a href="tel:+19048595593" class="phone-button">Call (904) 859-5593</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <div class="container">
+            <h2>Jacksonville's Trusted Commercial Maintenance Partner</h2>
+            <p class="intro-text">Crystal Handyman Pros offers comprehensive commercial maintenance services designed to keep your business facilities in peak condition. From routine repairs to facility improvements, our experienced team delivers reliable, professional solutions that minimize downtime and maximize your property's value.</p>
+            <a href="https://clienthub.getjobber.com/client_hubs/e99ab011-f2c0-47dd-85dd-da1cdb567fba/public/work_request/new?source=social_media" class="cta-button">Schedule Your Service</a>
+        </div>
+    </section>
+    
+    <!-- Service Blocks Section -->
+    <section class="service-blocks">
+        <div class="container">
+            <h2>Our Commercial Services</h2>
+            <div class="services-container">
+                <div class="service-block">
+                    <div class="service-image" style="background-image: url('https://crystalhandymanpros.com/wp-content/uploads/2025/04/crystal-handyman-office-scaled.webp');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Office Maintenance & Repairs</h3>
+                        <div class="service-list">
+                            <ul>
+                                <li>Lighting installation and repairs</li>
+                                <li>Drywall repair and painting</li>
+                                <li>Door and hardware maintenance</li>
+                                <li>Ceiling tile replacement</li>
+                                <li>Furniture assembly and installation</li>
+                            </ul>
+                        </div>
+                        <a href="https://clienthub.getjobber.com/client_hubs/e99ab011-f2c0-47dd-85dd-da1cdb567fba/public/work_request/new?source=social_media" class="cta-button">Request Service</a>
+                    </div>
+                </div>
+                
+                <div class="service-block">
+                    <div class="service-image" style="background-image: url('https://crystalhandymanpros.com/wp-content/uploads/2025/03/crystal-handyman-jacksonville-insulation.webp');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Retail Store Maintenance</h3>
+                        <div class="service-list">
+                            <ul>
+                                <li>Display fixture installation</li>
+                                <li>Shelving and storage solutions</li>
+                                <li>Storefront repairs and maintenance</li>
+                                <li>Fitting room maintenance</li>
+                                <li>Security hardware installation</li>
+                            </ul>
+                        </div>
+                        <a href="https://clienthub.getjobber.com/client_hubs/e99ab011-f2c0-47dd-85dd-da1cdb567fba/public/work_request/new?source=social_media" class="cta-button">Request Service</a>
+                    </div>
+                </div>
+                
+                <div class="service-block">
+                    <div class="service-image" style="background-image: url('https://crystalhandymanpros.com/wp-content/uploads/2025/04/handyman-commercial-kitchen-scaled.webp');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Restaurant & Food Service</h3>
+                        <div class="service-list">
+                            <ul>
+                                <li>Dining area repairs and maintenance</li>
+                                <li>Kitchen hardware installation</li>
+                                <li>Tile and flooring repairs</li>
+                                <li>Bar area maintenance</li>
+                                <li>Outdoor dining space upkeep</li>
+                            </ul>
+                        </div>
+                        <a href="https://clienthub.getjobber.com/client_hubs/e99ab011-f2c0-47dd-85dd-da1cdb567fba/public/work_request/new?source=social_media" class="cta-button">Request Service</a>
+                    </div>
+                </div>
+                
+                <div class="service-block">
+                    <div class="service-image" style="background-image: url('https://crystalhandymanpros.com/wp-content/uploads/2025/04/crystal-airbnb-property.webp');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Property Management Solutions</h3>
+                        <div class="service-list">
+                            <ul>
+                                <li>Tenant improvement projects</li>
+                                <li>Common area maintenance</li>
+                                <li>Emergency response services</li>
+                                <li>Building exterior upkeep</li>
+                                <li>Seasonal maintenance programs</li>
+                            </ul>
+                        </div>
+                        <a href="https://clienthub.getjobber.com/client_hubs/e99ab011-f2c0-47dd-85dd-da1cdb567fba/public/work_request/new?source=social_media" class="cta-button">Request Service</a>
+                    </div>
+                </div>
+                
+                <div class="service-block">
+                    <div class="service-image" style="background-image: url('https://crystalhandymanpros.com/wp-content/uploads/2025/03/drywall-repair-drywall-scaled.webp');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Facility Improvements</h3>
+                        <div class="service-list">
+                            <ul>
+                                <li>Energy efficiency upgrades</li>
+                                <li>ADA accessibility improvements</li>
+                                <li>Reception area redesigns</li>
+                                <li>Office space reconfigurations</li>
+                                <li>Technology infrastructure support</li>
+                            </ul>
+                        </div>
+                        <a href="https://clienthub.getjobber.com/client_hubs/e99ab011-f2c0-47dd-85dd-da1cdb567fba/public/work_request/new?source=social_media" class="cta-button">Request Service</a>
+                    </div>
+                </div>
+                
+                <div class="service-block">
+                    <div class="service-image" style="background-image: url('https://crystalhandymanpros.com/wp-content/uploads/2025/04/crystal-handyman-equipment-scaled.webp');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Preventive Maintenance Programs</h3>
+                        <div class="service-list">
+                            <ul>
+                                <li>Scheduled maintenance plans</li>
+                                <li>Routine inspection services</li>
+                                <li>Seasonal property upkeep</li>
+                                <li>Equipment maintenance</li>
+                                <li>Documentation and compliance</li>
+                            </ul>
+                        </div>
+                        <a href="https://clienthub.getjobber.com/client_hubs/e99ab011-f2c0-47dd-85dd-da1cdb567fba/public/work_request/new?source=social_media" class="cta-button">Request Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Optimize Your Facility Maintenance?</h2>
+                <p class="cta-text">Let Crystal Handyman Pros handle your commercial maintenance needs so you can focus on running your business. Contact us today for a free consultation and quote.</p>
+                <div class="cta-buttons">
+                    <a href="https://clienthub.getjobber.com/client_hubs/e99ab011-f2c0-47dd-85dd-da1cdb567fba/public/work_request/new?source=social_media" class="cta-button cta-dark">Request a Free Quote</a>
+                    <a href="tel:+19048595593" class="cta-button">Call (904) 859-5593</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="neighborhood-section">
+        <div class="container">
+            <h2>Serving Jacksonville's Finest Neighborhoods</h2>
+            <p class="intro-text">Crystal Handyman Pros provides specialized commercial maintenance services throughout Jacksonville's most distinctive neighborhoods. We understand the unique maintenance needs of businesses in each area and tailor our services accordingly.</p>
+            
+            <div class="neighborhood-grid">
+                <!-- Row 1 -->
+                <div class="neighborhood-card">
+                    <h3>Ortega & Riverside</h3>
+                    <p>Specialized commercial maintenance for historic properties and buildings in Ortega (32210) and Riverside (32204). Our team is experienced in preserving the charm and character of vintage commercial spaces while ensuring modern functionality.</p>
+                    <ul class="neighborhood-services">
+                        <li>Historic woodwork restoration</li>
+                        <li>Period-appropriate fixture installation</li>
+                        <li>Commercial kitchen updates in historic buildings</li>
+                    </ul>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <h3>San Marco & Avondale</h3>
+                    <p>Serving the unique needs of boutique businesses and upscale commercial properties in San Marco (32207) and Avondale (32205). We help maintain the distinctive character that makes these areas special.</p>
+                    <ul class="neighborhood-services">
+                        <li>Storefront maintenance and repairs</li>
+                        <li>Upscale retail display installations</li>
+                        <li>Restaurant and café maintenance services</li>
+                    </ul>
+                </div>
+                
+                <!-- Row 2 -->
+                <div class="neighborhood-card">
+                    <h3>Deerwood & Deercreek</h3>
+                    <p>Professional maintenance services for office complexes and commercial properties in the Deerwood and Deercreek areas (32256). We help businesses maintain their professional image.</p>
+                    <ul class="neighborhood-services">
+                        <li>Office building maintenance</li>
+                        <li>Professional space reconfiguration</li>
+                        <li>Energy efficiency upgrades</li>
+                    </ul>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <h3>Queens Harbour & The Beaches</h3>
+                    <p>Specialized maintenance for waterfront commercial properties in Queens Harbour (32225) and beach businesses in Ponte Vedra (32082), Neptune (32266), and Atlantic Beach (32233).</p>
+                    <ul class="neighborhood-services">
+                        <li>Waterfront property maintenance</li>
+                        <li>Salt air damage prevention and repair</li>
+                        <li>Beach business storefront upkeep</li>
+                    </ul>
+                </div>
+                
+                <!-- Row 3 -->
+                <div class="neighborhood-card">
+                    <h3>Nocatee & Mandarin</h3>
+                    <p>Serving the growing commercial needs in Nocatee (32081) and established businesses in Mandarin (32223). Our team provides reliable maintenance services for all types of commercial properties.</p>
+                    <ul class="neighborhood-services">
+                        <li>New commercial building maintenance</li>
+                        <li>Smart business technology integration</li>
+                        <li>Retail and office space upkeep</li>
+                    </ul>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <h3>Julington Creek & Beyond</h3>
+                    <p>Comprehensive commercial maintenance services for Julington Creek (32259) and surrounding Jacksonville areas. We help businesses throughout the region stay in top condition.</p>
+                    <ul class="neighborhood-services">
+                        <li>Commercial property improvements</li>
+                        <li>Regular maintenance programs</li>
+                        <li>Emergency repair services</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="neighborhood-cta">
+                <p>No matter where your business is located in Jacksonville, Crystal Handyman Pros has the expertise to handle all your commercial maintenance needs.</p>
+                <a href="https://clienthub.getjobber.com/client_hubs/e99ab011-f2c0-47dd-85dd-da1cdb567fba/public/work_request/new?source=social_media" class="cta-button">Request Service in Your Area</a>
+            </div>
+        </div>
+    </section>    
+</body>
+</html>
